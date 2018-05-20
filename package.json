@@ -23,6 +23,7 @@
     "@angular/router": "^4.4.6",
     "core-js": "^2.4.1",
     "handlebars": "^4.0.11",
+    "hoek": "^5.0.3",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
