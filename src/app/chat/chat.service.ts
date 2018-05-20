@@ -18,7 +18,9 @@ export class ChatService {
 
   conversation = new BehaviorSubject<Message[]>([]);
 
-  constructor() {}
+  constructor() {
+    this.converse("Wer bist du?");
+  }
 
   // Sends and receives messages via DialogFlow
   converse(msg: string) {

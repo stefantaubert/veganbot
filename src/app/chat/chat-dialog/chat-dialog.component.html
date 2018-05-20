@@ -1,6 +1,5 @@
-<h1>Angular Bot</h1>
-
-
+<br>
+<h1>Vegan-Bot</h1>
 
 <ng-container *ngFor="let message of messages | async">
 
@@ -12,10 +11,9 @@
 </ng-container>
 
 
-<label for="nameField">Your Message</label>
+<label for="nameField">Deine Frage an mich:</label>
 
 
 <input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text"><br>
 
-<button (click)="sendMessage()">Send</button>
-
+<button (click)="sendMessage()">Abschicken</button>
