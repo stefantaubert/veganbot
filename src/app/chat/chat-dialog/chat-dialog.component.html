@@ -1,19 +1,15 @@
-<br>
-<h1>Vegan-Bot</h1>
-
 <ng-container *ngFor="let message of messages | async">
 
-  <div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',
-                                    'to':   message.sentBy === 'user' }">
+  <div class="message" [ngClass]="{ 'from w3-theme-l1': message.sentBy === 'bot',
+                                    'to w3-theme-l3':   message.sentBy === 'user' }">
     {{ message.content }}
   </div>
 
 </ng-container>
 
 
+<div class="w3-content" style="max-width:500px">
 <label for="nameField">Deine Frage an mich:</label>
-
-
-<input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text"><br>
-
-<button (click)="sendMessage()">Abschicken</button>
+<input class="w3-input w3-theme-light" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text"><br>
+<button class="w3-button w3-round w3-right w3-theme-l3" (click)="sendMessage();">Abschicken</button>
+</div>

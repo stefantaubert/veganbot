@@ -23,8 +23,14 @@ export class ChatDialogComponent implements OnInit {
   }
 
   sendMessage() {
-    this.chat.converse(this.formValue);
-    this.formValue = '';
+    if (this.formValue && this.formValue.length > 0){
+      console.log(this.formValue)
+      this.chat.converse(this.formValue);
+      this.formValue = '';
+    }
+    else{
+      alert("Bitte gib zuerst eine Frage ein.");
+    }
   }
 
 }
