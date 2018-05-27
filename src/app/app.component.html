@@ -1,6 +1,22 @@
-<nav class="w3-top w3-theme-l3 w3-bar w3-padding w3-card">
-    <a href="#" class="w3-bar-item w3-button w3-kaushan w3-xlarge"><b>VEGAN-BOT</b></a>
+
+<nav class="w3-top" style="z-index: 99;">
+    <div class="w3-bar w3-theme-l1 w3-padding w3-card">
+        <a href="history.go(0);" class="w3-bar-item w3-button w3-kaushan w3-xlarge w3-hover-white"><b>VEGAN-BOT (BETA)</b></a>
+        <!-- Float links to the right. Hide them on small screens -->
+        <!-- <a class="w3-bar-item w3-button w3-right w3-xlarge" href="javascript:void(0);" onclick="toggleNavBar()" title="Navigationsmenü umschalten"><i class="fa fa-bars"></i></a> -->
+
+        <!-- <div class="w3-right w3-hide-medium w3-hide-small">
+            <a href="#about" class="w3-button w3-bar-item">IMPRESSUM</a>
+            <!--<a href="#contact" class="w3-button w3-bar-item">Kontakt</a>
+        </div> -->
+    </div>
+
+    <!-- <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large">
+        <a href="#about" class="w3-button w3-bar-item" onclick="toggleNavBar()">Über mich</a>
+        <!--<a href="#contact" class="w3-button w3-bar-item" onclick="toggleNavBar()">Kontakt</a>
+    </div> -->
 </nav>
+
 <br>
 <br>
 
@@ -8,12 +24,40 @@
     <div class="w3-display-middle w3-margin-top">
         <img src="assets/images/logo.png" class="w3-circle" style="height: 150px" alt="Logo">
     </div>
+    
 </section>
 
-<section id="about" class="w3-content w3-padding-16" style="max-width:600px;">
-    <div class="w3-container">
+<section id="about" class="w3-margin-top w3-row-padding">
+    <div class="w3-third">
+        <br>
+    </div>
+    <div class="w3-third">
         <chat-dialog></chat-dialog>
+       
+    </div>
+    <div class="w3-third">
+        <br>
     </div>
 </section>
+
+<footer class="w3-container w3-margin-top w3-padding-24 w3-theme-l1">
+    <div class="w3-content w3-center" style="max-width: 1400px;">
+            <h3 class="w3-center">Häufige Fragen</h3>
+            <button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large" (click)="talk($event.target.innerText)">Was bedeutet vegan?</button>
+            <button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Wieso sollte ich vegan werden?</button>
+            <button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Wie deckst du deinen Proteinbedarf?</button>
+            <button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Menschen haben schon immer Fleisch gegessen!</button>
+            <button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Aber für Milch müssen keine Kühe sterben?</button>
+            <button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large" (click)="talk($event.target.innerText)">Veganes Essen ist zu teuer!</button>
+            <button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Vegane Ernährung ist zu kompliziert!</button>
+            <button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Hast du keine Mangelerscheinungen?</button>
+    </div>
+
+    <br>
+    <div class="w3-content w3-center">
+        <p>© 2018 by Stefan Taubert | <a class="w3-medium" href="javascript:void(0)" onclick="document.getElementById('impressum').style.display='block'">Impressum</a></p>
+     </div>
+</footer>
+    
 
 
