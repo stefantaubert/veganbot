@@ -1,4 +1,4 @@
-<div #scrollMe style="overflow-x: hidden; overflow-y: auto; height: 400px;" class="w3-padding w3-margin-bottom">
+<div id="scrollMe" #scrollMe style="overflow-x: hidden; overflow-y: auto; height: auto;" class="w3-padding w3-margin-bottom">
   <ng-container *ngFor="let message of messages | async">
     <div class="message w3-round-large"  [ngClass]="{ 'from w3-theme-l1': message.sentBy === 'bot',
                                                       'to w3-theme-l3':   message.sentBy === 'user' }">
@@ -7,7 +7,7 @@
   </ng-container>
 </div>
 
-<div class="w3-content w3-right" style="width: 95%">
+<div class="w3-content" style="width: 90%">
     <button class="w3-button w3-right w3-theme-l3 w3-hover-white w3-round-large" style="float: right;" (click)="sendMessage();"><i class="fas fa-paper-plane"></i></button>
     <div style="overflow: hidden; padding-right: 10px;">
       <input class="w3-input w3-theme-light w3-round-large" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text" style="width: 100%;" placeholder="Frag mich etwas...">

@@ -5,7 +5,9 @@ Produktiv compilieren:
 ng build --prod --base-href "https://stefantaubert.github.io/veganbot/"
 
 Anschließend veröffentlichen auf dem gh-pages branch:
-ngh --message="First deploy"
+ngh
+oder 
+ngh --message="deploy"
 
 https://github.com/angular-schule/angular-cli-ghpages
 https://alligator.io/angular/deploying-angular-app-github-pages/

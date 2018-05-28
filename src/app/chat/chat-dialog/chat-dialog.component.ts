@@ -14,6 +14,7 @@ export class ChatDialogComponent implements OnInit, AfterViewChecked {
 
   messages: Observable<Message[]>;
   formValue: string;
+  maxHeight: number = 400;
 
   constructor(public chat: ChatService) { }
 
@@ -27,6 +28,11 @@ export class ChatDialogComponent implements OnInit, AfterViewChecked {
 
   ngAfterViewChecked() {        
     this.scrollToBottom();        
+    console.log(document.getElementById('scrollMe').offsetHeight)
+    //if (document.getElementById('scrollMe').offsetHeight >= this.maxHeight)
+      this.myScrollContainer.nativeElement.style.height =  this.maxHeight.toString() + "px";
+    
+ 
   } 
 
   scrollToBottom(): void {

@@ -1,7 +1,7 @@
 
 <nav class="w3-top" style="z-index: 99;">
     <div class="w3-bar w3-theme-l1 w3-padding w3-card">
-        <a href="history.go(0);" class="w3-bar-item w3-button w3-kaushan w3-xlarge w3-hover-white"><b>VEGAN-BOT (BETA)</b></a>
+        <a href="./" class="w3-bar-item w3-button w3-kaushan w3-xlarge w3-hover-white w3-text-black"><b>VEGAN-BOT (BETA)</b></a>
         <!-- Float links to the right. Hide them on small screens -->
         <!-- <a class="w3-bar-item w3-button w3-right w3-xlarge" href="javascript:void(0);" onclick="toggleNavBar()" title="Navigationsmenü umschalten"><i class="fa fa-bars"></i></a> -->
 
@@ -19,29 +19,30 @@
 
 <br>
 <br>
+<br>
 
-<section class="w3-display-container" style="height: 150px">
+<section class="w3-display-container" style="height: 200px">
     <div class="w3-display-middle w3-margin-top">
-        <img src="assets/images/logo.png" class="w3-circle" style="height: 150px" alt="Logo">
+        <a href="./">
+        <img src="assets/images/logo.svg" style="height: 180px" alt="Logo">
+        </a>
     </div>
-    
 </section>
 
 <section id="about" class="w3-margin-top w3-row-padding">
-    <div class="w3-third">
+    <div class="w3-col m3">
         <br>
     </div>
-    <div class="w3-third">
+    <div class="w3-col m6">
         <chat-dialog></chat-dialog>
-       
     </div>
-    <div class="w3-third">
+    <div class="w3-col m3">
         <br>
     </div>
 </section>
 
-<footer class="w3-container w3-margin-top w3-padding-24 w3-theme-l1">
-    <div class="w3-content w3-center" style="max-width: 1400px;">
+<footer class="w3-container w3-margin-top w3-padding-16 w3-theme-l1">
+    <div class="w3-content w3-center" style="max-width: 1500px;">
             <h3 class="w3-center">Häufige Fragen</h3>
             <button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large" (click)="talk($event.target.innerText)">Was bedeutet vegan?</button>
             <button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Wieso sollte ich vegan werden?</button>
@@ -52,10 +53,10 @@
             <button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Vegane Ernährung ist zu kompliziert!</button>
             <button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Hast du keine Mangelerscheinungen?</button>
     </div>
-
     <br>
-    <div class="w3-content w3-center">
-        <p>© 2018 by Stefan Taubert | <a class="w3-medium" href="javascript:void(0)" onclick="document.getElementById('impressum').style.display='block'">Impressum</a></p>
+    <div class="w3-content w3-center w3-border-top w3-border-black">
+        <br>
+        © 2018 by <a target="_blank" href="https://stefantaubert.com">Stefan Taubert</a> | Erstellt mit <a rel="nofollow" target="_blank" href="https://dialogflow.com">Dialogflow</a> | <a class="w3-medium" href="assets/impressum.html">Impressum</a> | <a class="w3-medium" href="assets/datenschutz.html">Datenschutz</a>
      </div>
 </footer>
     
