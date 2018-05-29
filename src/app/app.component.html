@@ -1,5 +1,4 @@
 
-
 <nav class="w3-top" style="z-index: 99;">
     <div class="w3-bar w3-theme-l1 w3-padding w3-card">
         <a href="./" class=" w3-bar-item w3-button w3-kaushan w3-large w3-hover-green w3-text-black"><b>VEGAN-BOT</b></a>
@@ -7,15 +6,15 @@
         <a class="w3-bar-item w3-button w3-right w3-large w3-text-black w3-hide-large" href="javascript:void(0);" onclick="toggleNavBar()" title="Navigationsmenü umschalten"><i class="fa fa-bars"></i></a>
 
         <div class="w3-right w3-hide-small w3-hide-medium">
-            <a href="#input" class="w3-button w3-bar-item w3-large w3-hover-green w3-text-black" (click)="talk('Ich würde gern Feedback geben!')">Feedback</a>
-            <a href="#input" class="w3-button w3-bar-item w3-large w3-hover-green w3-text-black" (click)="talk('Wie funktioniert das hier?')">Hilfe</a>
-            <a href="#input" class="w3-button w3-bar-item w3-large w3-hover-green w3-text-black" (click)="talk('Wieso das ganze hier?')">Über</a>
+            <a class="w3-button w3-bar-item w3-large w3-hover-green w3-text-black" (click)="talk('Ich würde gern Feedback geben!')">Feedback</a>
+            <a class="w3-button w3-bar-item w3-large w3-hover-green w3-text-black" (click)="talk('Wie funktioniert das hier?')">Hilfe</a>
+            <a class="w3-button w3-bar-item w3-large w3-hover-green w3-text-black" (click)="talk('Wieso das ganze hier?')">Über</a>
         </div>
 
     <div id="navDemo" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large">
-        <a href="#input" class="w3-button w3-bar-item w3-large w3-hover-green w3-text-black" onclick="toggleNavBar()" (click)="talk('Ich würde gern Feedback geben!')">Feedback</a>
-        <a href="#input" class="w3-button w3-bar-item w3-large w3-hover-green w3-text-black" onclick="toggleNavBar()" (click)="talk('Wie funktioniert das hier?')">Hilfe</a>
-        <a href="#input" class="w3-button w3-bar-item w3-large w3-hover-green w3-text-black" onclick="toggleNavBar()" (click)="talk('Wieso das ganze hier?')">Über</a>
+        <a class="w3-button w3-bar-item w3-large w3-hover-green w3-text-black" onclick="toggleNavBar()" (click)="talk('Ich würde gern Feedback geben!')">Feedback</a>
+        <a class="w3-button w3-bar-item w3-large w3-hover-green w3-text-black" onclick="toggleNavBar()" (click)="talk('Wie funktioniert das hier?')">Hilfe</a>
+        <a class="w3-button w3-bar-item w3-large w3-hover-green w3-text-black" onclick="toggleNavBar()" (click)="talk('Wieso das ganze hier?')">Über</a>
     </div>
     </div>
 </nav>
@@ -46,14 +45,14 @@
 <footer class="w3-container w3-margin-top w3-padding-16 w3-theme-l1">
     <div class="w3-content w3-center" style="max-width: 1500px;">
         <h3 class="w3-center">Häufige Fragen</h3>
-        <a href="#input"><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large" (click)="talk($event.target.innerText)">Was bedeutet vegan?</button></a> 
-        <a href="#input"><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Wieso sollte ich vegan werden?</button></a> 
-        <a href="#input"><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Wie deckst du deinen Proteinbedarf?</button></a> 
-        <a href="#input"><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Menschen haben schon immer Fleisch gegessen!</button></a> 
-        <a href="#input"><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Aber für Milch müssen keine Kühe sterben?</button></a> 
-        <a href="#input"><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large" (click)="talk($event.target.innerText)">Veganes Essen ist zu teuer!</button></a> 
-        <a href="#input"><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Vegane Ernährung ist zu kompliziert!</button></a> 
-        <a href="#input"><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Hast du keine Mangelerscheinungen?</button></a> 
+        <a><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large" (click)="talk($event.target.innerText)">Was bedeutet vegan?</button></a> 
+        <a><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Wieso sollte ich vegan werden?</button></a> 
+        <a><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Wie deckst du deinen Proteinbedarf?</button></a> 
+        <a><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Menschen haben schon immer Fleisch gegessen!</button></a> 
+        <a><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Aber für Milch müssen keine Kühe sterben?</button></a> 
+        <a><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large" (click)="talk($event.target.innerText)">Veganes Essen ist zu teuer!</button></a> 
+        <a><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Vegane Ernährung ist zu kompliziert!</button></a> 
+        <a><button class="w3-button w3-margin w3-theme-l3 w3-hover-white w3-round-large w3-hide-small" (click)="talk($event.target.innerText)">Hast du keine Mangelerscheinungen?</button></a> 
     </div>
     <br>
     <div class="w3-content w3-center w3-border-top w3-border-black">
@@ -62,15 +61,3 @@
      </div>
 </footer>
     
-<script type="text/javascript">
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function toggleNavBar() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-        }
-    }
-  
-  </script>

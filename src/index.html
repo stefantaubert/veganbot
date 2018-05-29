@@ -20,7 +20,17 @@
       font-family: "Kaushan Script", serif;
   }
   </style>
-
+  <script type="text/javascript">
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleNavBar() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+  </script>
 </head>
 <body class="w3-theme-l4">
   <app-root></app-root>
