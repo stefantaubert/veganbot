@@ -14,7 +14,7 @@ export class ChatDialogComponent implements OnInit, AfterViewChecked {
 
   messages: Observable<Message[]>;
   formValue: string;
-  maxHeight: number = 400;
+  maxHeight: number = 350;
 
   constructor(public chat: ChatService) { }
 

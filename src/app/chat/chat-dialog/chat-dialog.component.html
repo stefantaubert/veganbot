@@ -10,6 +10,6 @@
 <div class="w3-content" style="width: 90%">
     <button class="w3-button w3-right w3-theme-l3 w3-hover-white w3-round-large" style="float: right;" (click)="sendMessage();"><i class="fas fa-paper-plane"></i></button>
     <div style="overflow: hidden; padding-right: 10px;">
-      <input class="w3-input w3-theme-light w3-round-large" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text" style="width: 100%;" placeholder="Frag mich etwas...">
+      <input id="input" class="w3-input w3-theme-light w3-round-large" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text" style="width: 100%;" placeholder="Frag mich etwas...">
     </div>​
 </div>
