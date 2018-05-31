@@ -1,7 +1,7 @@
 
 <nav class="w3-top" style="z-index: 99;">
     <div class="w3-bar w3-theme-l1 w3-padding w3-card">
-        <a href="./" class=" w3-bar-item w3-button w3-kaushan w3-large w3-hover-green w3-text-black"><b>VEGAN-BOT</b></a>
+        <a href="./" class=" w3-bar-item w3-button w3-kaushan w3-large w3-hover-green w3-text-black" title="Startseite"><b>VEGAN-BOT</b></a>
         <!-- Float links to the right. Hide them on small screens -->
         <a class="w3-bar-item w3-button w3-right w3-large w3-text-black w3-hide-large" href="javascript:void(0);" onclick="toggleNavBar()" title="Navigationsmenü umschalten"><i class="fa fa-bars"></i></a>
 
@@ -10,6 +10,9 @@
             <a class="w3-button w3-bar-item w3-large w3-hover-green w3-text-black" (click)="talk('Wie funktioniert das hier?')">Hilfe</a>
             <a class="w3-button w3-bar-item w3-large w3-hover-green w3-text-black" (click)="talk('Wieso das ganze hier?')">Über</a>
         </div>
+ <!-- <i class="far fa-comment-alt"></i>
+      <i class="far fa-question-circle"></i> 
+      <i class="far fa-comments"></i>  -->
 
     <div id="navDemo" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large">
         <a class="w3-button w3-bar-item w3-large w3-hover-green w3-text-black" onclick="toggleNavBar()" (click)="talk('Ich würde gern Feedback geben!')">Feedback</a>
@@ -24,7 +27,7 @@
 
 <section class="w3-display-container" style="height: 200px">
     <div class="w3-display-middle w3-margin-top">
-        <a href="./">
+        <a href="./" title="Startseite">
         <img src="assets/images/logo.svg" style="height: 180px" alt="Logo">
         </a>
     </div>
@@ -57,7 +60,7 @@
     <br>
     <div class="w3-content w3-center w3-border-top w3-border-black">
         <br>
-        © 2018 by <a target="_blank" href="https://stefantaubert.com">Stefan Taubert</a> | Erstellt mit <a rel="nofollow" target="_blank" href="https://dialogflow.com">Dialogflow</a> | <a class="w3-medium" href="assets/impressum.html">Impressum</a> | <a class="w3-medium" href="assets/datenschutz.html">Datenschutz</a>
+        © 2018 by <a target="_blank" href="https://stefantaubert.com">Stefan Taubert</a> | Erstellt mit <a rel="nofollow" target="_blank" href="https://dialogflow.com">Dialogflow</a> | <a (click)="talk('Woher hast du die ganzen Informationen?')">Quellen</a> | <a class="w3-medium" href="assets/impressum.html">Impressum</a> | <a class="w3-medium" href="assets/datenschutz.html">Datenschutz</a>
      </div>
 </footer>
     

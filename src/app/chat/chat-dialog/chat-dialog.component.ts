@@ -40,6 +40,26 @@ export class ChatDialogComponent implements OnInit, AfterViewChecked {
           this.myScrollContainer.nativeElement.scrollTop = this.myScrollContainer.nativeElement.scrollHeight;
       } catch(err) { }                 
   }
+  // Your array of meals
+  private questions: Array<string> = [
+    "Was ist mit Eiern aus Freilandhaltung?", 
+    "Warum tragen Veganer keine Wolle?",
+    "Was ist an Honig so schlimm?",
+    "Wieso sollte ich vegan werden?",
+    "Wie deckst du deinen Proteinbedarf?",
+    "Menschen haben schon immer Fleisch gegessen!",
+    "Aber für Milch müssen keine Kühe sterben?",
+    "Veganes Essen ist zu teuer!",
+    "Vegane Ernährung ist zu kompliziert!",
+    "Hast du keine Mangelerscheinungen?",
+  ];
+
+  random(): void {
+    let randomIndex = Math.floor((Math.random() * this.questions.length) );
+    let q = this.questions[randomIndex];
+
+    this.chat.converse(q);
+  }
 
   sendMessage() {
     if (this.formValue && this.formValue.length > 0){

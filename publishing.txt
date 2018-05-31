@@ -2,7 +2,7 @@ debug
 ng serve
 
 Produktiv compilieren:
-ng build --prod --base-href "https://stefantaubert.github.io/veganbot/"
+ng build --prod --base-href "http://veganbot.de"
 
 Anschließend veröffentlichen auf dem gh-pages branch:
 ngh
