@@ -45,3 +45,9 @@ testem.log
 .DS_Store
 Thumbs.db
 /.vs
+/etc/Intents.mm
+/etc/fragen.txt
+/etc/logo.svg
+/etc/q&a.md
+/etc/quellen.txt
+/etc/website.svg
